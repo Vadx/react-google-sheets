@@ -1,12 +1,21 @@
 import React from 'react'
 import { Container, Menu } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 const HeaderPage = () => (
   <Menu inverted>
     <Container>
       <Menu.Item as='a'>React + GoogleSheets</Menu.Item>
-      <Menu.Item as='a'>Form</Menu.Item>
-      <Menu.Item as='a'>Table</Menu.Item>
+      <Menu.Item>
+        <Link to='/'>
+          Home
+        </Link>
+      </Menu.Item>
+      <Menu.Item>
+        <Link to='/form'>
+          Form
+        </Link>
+      </Menu.Item>
     </Container>
   </Menu>
 )
