@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom'
 const HeaderPage = () => (
   <Menu inverted>
     <Container>
-      <Menu.Item as='a'>React + GoogleSheets</Menu.Item>
+      <Menu.Item>
+        <Link to='/'>
+          React + GoogleSheets
+        </Link>
+      </Menu.Item>
       <Menu.Item>
         <Link to='/'>
           Home
